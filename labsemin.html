@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Website</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: lightgray;
+        }
+
+        nav {
+            background: black;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 180px;
+            text-align: center;
+            border-radius: 10px;
+            animation: fade 2s;
+            transition: 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        button {
+            background: green;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>MyShop</h2>
+        <p>Home | Products | Contact</p>
+    </nav>
+
+    <h2 align="center">Our Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <h3>Mobile</h3>
+            <p>Price: ₹15000</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Laptop</h3>
+            <p>Price: ₹45000</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Headphones</h3>
+            <p>Price: ₹2000</p>
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
